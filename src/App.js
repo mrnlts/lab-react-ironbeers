@@ -4,6 +4,7 @@ import axios from 'axios';
 import HomePage from './components/HomePage';
 import AllBeers from './components/AllBeers';
 import OneBeer from './components/OneBeer';
+import RandomBeer from './components/RandomBeer';
 class App extends Component{
   constructor(props) {
     super(props)
@@ -23,6 +24,7 @@ class App extends Component{
       <div className="h-screen">
         <Switch>
           <Route exact path="/beers/:id" component={OneBeer}/>
+          <Route exact path="/random" component={RandomBeer} />
           <Route exact path="/beers">
             <AllBeers beers={beers} />
           </Route>

@@ -8,13 +8,19 @@ class HomePage extends Component {
   render() {
     return (
       <div>
-        <HomePageArticle type={'beers'} title={'All Beers'} img={beersImg} />
         <HomePageArticle
+          key={0}
+          type={'beers'}
+          title={'All Beers'}
+          img={beersImg}
+        />
+        <HomePageArticle
+          key={1}
           type={'random'}
           title={'Random Beer'}
           img={randomImg}
         />
-        <HomePageArticle type={'beers'} title={'New Beer'} img={newImg} />
+        <HomePageArticle key={2} type={'new'} title={'New Beer'} img={newImg} />
       </div>
     );
   }
