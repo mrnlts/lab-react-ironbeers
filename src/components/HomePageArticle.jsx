@@ -5,7 +5,7 @@ class HomePageArticle extends Component {
   render() {
     const { type, title, img } = this.props;
     return (
-      <article className="mr-1 ml-1 mb-5">
+      <article className="m-1 mb-5">
         <Link to={`/${type}`}>
           <img src={img} alt={type} />
         </Link>
