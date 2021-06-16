@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Header from '../components/Header';
-import BeerCard from '../components/BeerCard';
+import BeerCardLarge from '../components/BeerCardLarge';
 
 class RandomBeer extends Component {
   constructor() {
@@ -19,9 +19,9 @@ class RandomBeer extends Component {
   render() {
     const { currentBeer } = this.state;
     return (
-      <div>
+      <div className="pt-1">
         <Header />
-        <BeerCard beer={currentBeer} />
+        <BeerCardLarge beer={currentBeer} />
       </div>
     );
   }

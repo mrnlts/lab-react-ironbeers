@@ -11,16 +11,24 @@ class HomePage extends Component {
         <HomePageArticle
           key={0}
           type={'beers'}
+          link={'/beers'}
           title={'All Beers'}
           img={beersImg}
         />
         <HomePageArticle
           key={1}
           type={'random'}
+          link={'/random-beer'}
           title={'Random Beer'}
           img={randomImg}
         />
-        <HomePageArticle key={2} type={'new'} title={'New Beer'} img={newImg} />
+        <HomePageArticle
+          key={2}
+          type={'new'}
+          link={'/new-beer'}
+          title={'New Beer'}
+          img={newImg}
+        />
       </div>
     );
   }
