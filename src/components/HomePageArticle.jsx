@@ -9,7 +9,7 @@ class HomePageArticle extends Component {
         <Link to={`/${type}`}>
           <img src={img} alt={type} />
         </Link>
-        <div className="ml-5 mr-5">
+        <div className="ml-1 mr-1">
           <h1 className="font-extrabold text-2xl">{title}</h1>
           <p className="text-xs">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vivamus
